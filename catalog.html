@@ -55,91 +55,85 @@
        <div class="selection">
          <form action="#" method="get">
          <h2>ПРОИЗВОДИТЕЛИ:</h2>
-         <ul class="manufacturer">
-           <li>
+         <fieldset class="manufacturer">
              <input type="checkbox" name="baxter" id="manufacturer-baxter" checked>
              <label for="manufacturer-baxter">BAXTER OF CALIFORNIA</label>
-           </li>
-           <li>
              <input type="checkbox" name="mr-natty" id="manufacturer-mr-natty">
              <label for="manufacturer-mr-natty">MR NATTY</label>
-           </li>
-           <li>
              <input type="checkbox" name="suavecito" id="manufacturer-suavecito" checked>
              <label for="manufacturer-suavecito">SUAVECITO</label>
-           </li>
-           <li>
              <input type="checkbox" name="malin-goetz" id="manufacturer-malin-goetz" >
              <label for="manufacturer-malin-goetz">MALIN+GOETZ</label>
-           </li>
-           <li>
              <input type="checkbox" name="murray" id="manufacturer-murray" >
              <label for="manufacturer-murray">MURRAY'S</label>
-           </li>
-           <li>
              <input type="checkbox" name="american-crew" id="manufacturer-american-crew" checked>
              <label for="manufacturer-american-crew">AMERICAN CREW</label>
-           </li>
-         </ul>
+         </fieldset>
          <h2>ГРУППЫ ТОВАРОВ:</h2>
          <section class="choise-goods">
-           <label class="goods-item">
-              <input type="radio" name="goods" value="Shaving accessories">
-              БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
-            </label>
-            <label class="goods-item">
-              <input type="radio" name="goods" value="Means for care" checked>
-              СРЕДСТВА ДЛЯ УХОДА
-            </label>
-            <label class="goods-item">
-              <input type="radio" name="goods" value="Accessories">
-              АКСЕССУАРЫ
-            </label>
+              <input type="radio" name="goods" value="Shaving accessories" id="Shaving-accessories">
+              <label class="goods-item" for="Shaving-accessories">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+              <input type="radio" name="goods" value="Means for care" id="Means-for-care" checked>
+              <label class="goods-item" for=""Means-for-care"">СРЕДСТВА ДЛЯ УХОДА</label>
+              <input type="radio" name="goods" value="Accessories" id="Accessories">
+              <label class="goods-item" for="Accessories">АКСЕССУАРЫ</label>
           </section>
-          <input type="submit" value="ПОКАЗАТЬ">
+          <button type="submit">ПОКАЗАТЬ</button>
         </form>
        </div>
        <!-- Найденные товары -->
        <section class="catalog">
          <article class="catalog-item">
-           <img src="http://placehold.it/150x100" alt="Набор для путешествий «BAXTER OF CALIFORNIA»" width="200" height="100">
+           <figure>
+             <img src="http://placehold.it/150x100" alt="Набор для путешествий «BAXTER OF CALIFORNIA»" width="200" height="100">
+           </figure>
            <h3>Набор для путешествий «BAXTER OF CALIFORNIA»</h3>
-           <b>2 900 р.</b>
+           <span>2 900 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
-           <img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер «BAXTER OF CALIFORNIA»" width="200" height="100">
+           <figure>
+             <img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер «BAXTER OF CALIFORNIA»" width="200" height="100">
+           </figure>
            <h3>Увлажняющий кондиционер «BAXTER OF CALIFORNIA»</h3>
-           <b>750 р.</b>
+           <span>750 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
-           <img src="http://placehold.it/150x100" alt="Гель для волос «SUAVECITO»" width="200" height="100">
+           <figure>
+             <img src="http://placehold.it/150x100" alt="Гель для волос «SUAVECITO»" width="200" height="100">
+           </figure>
            <h3>Гель для волос «SUAVECITO»</h3>
-           <b>290 р.</b>
+           <span>290 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
-           <img src="http://placehold.it/150x100" alt="Глина для укладки волос «AMERICAN CREW»" width="200" height="100">
+           <figure>
+             <img src="http://placehold.it/150x100" alt="Глина для укладки волос «AMERICAN CREW»" width="200" height="100">
+           </figure>
            <h3>Глина для укладки волос «AMERICAN CREW»</h3>
-           <b>500 р.</b>
+           <span>500 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
-           <img src="http://placehold.it/150x100" alt="Гель для волос «AMERICAN CREW»" width="200" height="100">
+           <figure>
+             <img src="http://placehold.it/150x100" alt="Гель для волос «AMERICAN CREW»" width="200" height="100">
+           </figure>
            <h3>Гель для волос «AMERICAN CREW»</h3>
-           <b>300 р.</b>
+           <span>300 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
-           <img src="http://placehold.it/150x100" alt="Набор для бритья «BAXTER OF CALIFORNIA»" width="200" height="100">
+           <figure>
+             <img src="http://placehold.it/150x100" alt="Набор для бритья «BAXTER OF CALIFORNIA»" width="200" height="100">
+           </figure>
            <h3>Набор для бритья «BAXTER OF CALIFORNIA»</h3>
-           <b>3 900 р.</b>
+           <span>3 900 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
        </section>
        <!-- Навигация по страницам -->
-       <div class="menu-page">
+       <div class="pagination">
          <ul>
            <li>
              <a class="btn-page" href="#">1</a>
@@ -162,15 +156,23 @@
      <div class="container">
        <section class="footer-contacts">
          Барбершоп «Бородинский»<br>
-         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+         <address>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</address>
          <a href="#">Как нас найти?</a><br>
-         Телефон: +7 (812) 666-02-66
+         Телефон: <a href="tel:+7 (812) 666-02-66">
        </section>
        <section class="footer-social">
          <p>Давайте дружить!</p>
-         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+         <ul class="social">
+           <li>
+             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+           </li>
+           <li>
+             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+           </li>
+           <li>
+             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+           </li>
+         </ul>
        </section>
        <section class="footer-copyright">
          <p>Разработано:</p>
