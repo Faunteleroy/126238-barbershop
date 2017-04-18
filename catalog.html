@@ -54,8 +54,8 @@
        <!-- Левое меню поиска -->
        <div class="selection">
          <form action="#" method="get">
-         <h2>Производители:</h2>
-         <fieldset class="manufacturer">
+           <legend>Производители:</legend>
+           <fieldset class="manufacturer">
              <input type="checkbox" name="baxter" id="manufacturer-baxter" checked>
              <label for="manufacturer-baxter">BAXTER OF CALIFORNIA</label>
              <input type="checkbox" name="mr-natty" id="manufacturer-mr-natty">
@@ -68,17 +68,17 @@
              <label for="manufacturer-murray">MURRAY'S</label>
              <input type="checkbox" name="american-crew" id="manufacturer-american-crew" checked>
              <label for="manufacturer-american-crew">AMERICAN CREW</label>
-         </fieldset>
-         <h2>Группы товаров:</h2>
-         <section class="choise-goods">
+           </fieldset>
+           <legend>Группы товаров:</legend>
+           <fieldset class="choise-goods">
               <input type="radio" name="goods" value="Shaving accessories" id="Shaving-accessories">
               <label class="goods-item" for="Shaving-accessories">Бритвенные принадлежности</label>
               <input type="radio" name="goods" value="Means for care" id="Means-for-care" checked>
               <label class="goods-item" for="Means-for-care">Средства для ухода</label>
               <input type="radio" name="goods" value="Accessories" id="Accessories">
               <label class="goods-item" for="Accessories">Аксессуары</label>
-          </section>
-          <button type="submit">Показать</button>
+            </fieldset>
+            <button type="submit">Показать</button>
         </form>
        </div>
        <!-- Найденные товары -->
@@ -88,7 +88,7 @@
              <img src="http://placehold.it/150x100" alt="Набор для путешествий «BAXTER OF CALIFORNIA»" width="200" height="100">
            </figure>
            <h3>Набор для путешествий «BAXTER OF CALIFORNIA»</h3>
-           <span>2 900 р.</span>
+           <span class="price">2 900 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
@@ -96,7 +96,7 @@
              <img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер «BAXTER OF CALIFORNIA»" width="200" height="100">
            </figure>
            <h3>Увлажняющий кондиционер «BAXTER OF CALIFORNIA»</h3>
-           <span>750 р.</span>
+           <span class="price">750 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
@@ -104,7 +104,7 @@
              <img src="http://placehold.it/150x100" alt="Гель для волос «SUAVECITO»" width="200" height="100">
            </figure>
            <h3>Гель для волос «SUAVECITO»</h3>
-           <span>290 р.</span>
+           <span class="price">290 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
@@ -112,7 +112,7 @@
              <img src="http://placehold.it/150x100" alt="Глина для укладки волос «AMERICAN CREW»" width="200" height="100">
            </figure>
            <h3>Глина для укладки волос «AMERICAN CREW»</h3>
-           <span>500 р.</span>
+           <span class="price">500 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
@@ -120,7 +120,7 @@
              <img src="http://placehold.it/150x100" alt="Гель для волос «AMERICAN CREW»" width="200" height="100">
            </figure>
            <h3>Гель для волос «AMERICAN CREW»</h3>
-           <span>300 р.</span>
+           <span class="price">300 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
@@ -128,7 +128,7 @@
              <img src="http://placehold.it/150x100" alt="Набор для бритья «BAXTER OF CALIFORNIA»" width="200" height="100">
            </figure>
            <h3>Набор для бритья «BAXTER OF CALIFORNIA»</h3>
-           <span>3 900 р.</span>
+           <span class="price">3 900 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
        </section>
@@ -139,7 +139,7 @@
              <a class="btn-page" href="#">1</a>
            </li>
            <li>
-             <a class="btn-page" href="#">2</a>
+             <a class="btn-page active" href="#">2</a>
            </li>
            <li>
              <a class="btn-page" href="#">3</a>
