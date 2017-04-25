@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Страница товара барбершопа «Бородинский»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- Шапка страницы -->
@@ -37,8 +38,8 @@
     </header>
     <!-- Внутренняя часть -->
     <main class="container">
-       <article class="goods">
-         <h1>Набор для путешествий «BAXTER OF CALIFORNIA»</h1>
+       <div class="goods">
+         <h1 class="h-item">Набор для путешествий «BAXTER OF CALIFORNIA»</h1>
          <!-- Меню -->
           <div class="breadcrumbs">
             <ul>
@@ -56,21 +57,23 @@
               </li>
             </ul>
           </div>
-         <section class="gallery">
+        <section class="gallery">
            <div class="gallery-prewiev">
              <figure class="gallery-big-photo">
-               <img src="http://placehold.it/150x100">
+               <img src="img/ГалереяПревью.jpg" width="403" height="437">
              </figure>
            </div>
-            <figure class="gallery-photos">
-              <img src="http://placehold.it/150x100">
-            </figure>
-            <figure class="gallery-photos">
-              <img src="http://placehold.it/150x100">
-            </figure>
-            <figure class="gallery-photos">
-              <img src="http://placehold.it/150x100">
-            </figure>
+           <div class="gallery-photo">
+              <figure class="gallery-photos">
+                <img src="img/Галереяфото1.jpg" width="140" height="149">
+              </figure>
+              <figure class="gallery-photos">
+                <img src="img/Галереяфото2.jpg" width="140" height="149">
+              </figure>
+              <figure class="gallery-photos">
+                <img src="img/Галереяфото3.jpg" width="140" height="149">
+              </figure>
+           </div>
         </section>
         <section class="specification">
           <span class="in-stock">Есть в наличии</span>
@@ -82,7 +85,7 @@
             бритья, шампунь. Набор также может стать отличным подарком.</p>
             <span class="price">2 900 р.</span>
             <a class="btn" href="#">Купить</a>
-            <h2>В набор входят:</h2>
+            <h2 class="h-composition">В набор входят:</h2>
             <ul class="composition">
               <li>Средство для умывания (50 мл)</li>
               <li>Увлажняющий крем (50 мл)</li>
@@ -91,7 +94,7 @@
               <li>Удобная кожаная косметичка</li>
             </ul>
         </section>
-       </article>
+      </div>
      </main>
      <!-- Подвал -->
      <footer class="main-footer">
@@ -100,7 +103,7 @@
           Барбершоп «Бородинский»<br>
           <address>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</address>
           <a href="#">Как нас найти?</a><br>
-          Телефон: <a href="tel:+7 (812) 666-02-66"></a>
+          Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a>
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>

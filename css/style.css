@@ -1,0 +1,16 @@
+body {
+  font-family: "PT Sans Narrow", "Arial Rounded MT Bold", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+h1.h-item,
+h1.h-catalog {
+  font-size: 30px;
+}
+h2.h-composition {
+  font-size: 24px;
+}
+h2.h-catalog-item {
+  font-size: 14px;
+}

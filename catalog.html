@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог барбершопа «Бородинский»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- Шапка страницы -->
@@ -37,7 +38,7 @@
     </header>
     <!-- Каталог с поиском -->
     <main class="container">
-      <h1>Средства для ухода</h1>
+      <h1 class="h-catalog">Средства для ухода</h1>
       <div class="breadcrumbs">
          <ul>
            <li>
@@ -54,8 +55,8 @@
        <!-- Левое меню поиска -->
        <div class="selection">
          <form action="#" method="get">
-           <legend>Производители:</legend>
            <fieldset class="manufacturer">
+             <legend>Производители:</legend>
              <input type="checkbox" name="baxter" id="manufacturer-baxter" checked>
              <label for="manufacturer-baxter">BAXTER OF CALIFORNIA</label>
              <input type="checkbox" name="mr-natty" id="manufacturer-mr-natty">
@@ -69,8 +70,8 @@
              <input type="checkbox" name="american-crew" id="manufacturer-american-crew" checked>
              <label for="manufacturer-american-crew">AMERICAN CREW</label>
            </fieldset>
-           <legend>Группы товаров:</legend>
            <fieldset class="choise-goods">
+              <legend>Группы товаров:</legend>
               <input type="radio" name="goods" value="Shaving accessories" id="Shaving-accessories">
               <label class="goods-item" for="Shaving-accessories">Бритвенные принадлежности</label>
               <input type="radio" name="goods" value="Means for care" id="Means-for-care" checked>
@@ -85,49 +86,49 @@
        <section class="catalog">
          <article class="catalog-item">
            <figure>
-             <img src="http://placehold.it/150x100" alt="Набор для путешествий «BAXTER OF CALIFORNIA»" width="200" height="100">
+             <img src="img\КаталогНабДляПутешествия.jpg" alt="Набор для путешествий «BAXTER OF CALIFORNIA»" width="220" height="165">
            </figure>
-           <h3>Набор для путешествий «BAXTER OF CALIFORNIA»</h3>
+           <h2 class="h-catalog-item">Набор для путешествий «BAXTER OF CALIFORNIA»</h2>
            <span class="price">2 900 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
            <figure>
-             <img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер «BAXTER OF CALIFORNIA»" width="200" height="100">
+             <img src="img\КаталогУвлКондиционер.jpg" alt="Увлажняющий кондиционер «BAXTER OF CALIFORNIA»" width="220" height="165">
            </figure>
-           <h3>Увлажняющий кондиционер «BAXTER OF CALIFORNIA»</h3>
+           <h2 class="h-catalog-item">Увлажняющий кондиционер «BAXTER OF CALIFORNIA»</h2>
            <span class="price">750 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
            <figure>
-             <img src="http://placehold.it/150x100" alt="Гель для волос «SUAVECITO»" width="200" height="100">
+             <img src="img\КаталогГельВолосСуавесико.jpg" alt="Гель для волос «SUAVECITO»" width="220" height="165">
            </figure>
-           <h3>Гель для волос «SUAVECITO»</h3>
+           <h2 class="h-catalog-item">Гель для волос «SUAVECITO»</h2>
            <span class="price">290 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
            <figure>
-             <img src="http://placehold.it/150x100" alt="Глина для укладки волос «AMERICAN CREW»" width="200" height="100">
+             <img src="img\КаталогГлинаУклад.jpg" alt="Глина для укладки волос «AMERICAN CREW»" width="220" height="165">
            </figure>
-           <h3>Глина для укладки волос «AMERICAN CREW»</h3>
+           <h2 class="h-catalog-item">Глина для укладки волос «AMERICAN CREW»</h2>
            <span class="price">500 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
            <figure>
-             <img src="http://placehold.it/150x100" alt="Гель для волос «AMERICAN CREW»" width="200" height="100">
+             <img src="img\КаталогГельВолосАмерикан.jpg" alt="Гель для волос «AMERICAN CREW»" width="220" height="165">
            </figure>
-           <h3>Гель для волос «AMERICAN CREW»</h3>
+           <h2 class="h-catalog-item">Гель для волос «AMERICAN CREW»</h2>
            <span class="price">300 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
          <article class="catalog-item">
            <figure>
-             <img src="http://placehold.it/150x100" alt="Набор для бритья «BAXTER OF CALIFORNIA»" width="200" height="100">
+             <img src="img\КаталогНаборБритья.jpg" alt="Набор для бритья «BAXTER OF CALIFORNIA»" width="220" height="165">
            </figure>
-           <h3>Набор для бритья «BAXTER OF CALIFORNIA»</h3>
+           <h2 class="h-catalog-item">Набор для бритья «BAXTER OF CALIFORNIA»</h2>
            <span class="price">3 900 р.</span>
            <a class="btn" href="#">Купить</a>
          </article>
@@ -158,7 +159,7 @@
          Барбершоп «Бородинский»<br>
          <address>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</address>
          <a href="#">Как нас найти?</a><br>
-         Телефон: <a href="tel:+7 (812) 666-02-66"></a>
+         Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a>
        </section>
        <section class="footer-social">
          <p>Давайте дружить!</p>
