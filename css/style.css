@@ -8,10 +8,13 @@ body {
 h1.h-item,
 h1.h-catalog {
   font-size: 30px;
+  line-height: 42px;
 }
 h2.h-composition {
   font-size: 24px;
+  line-height: 30px;
 }
 h2.h-catalog-item {
   font-size: 14px;
+  line-height: 18px;
 }
