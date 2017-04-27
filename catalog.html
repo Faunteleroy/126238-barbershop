@@ -8,7 +8,7 @@
   <body>
     <!-- Шапка страницы -->
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -52,87 +52,89 @@
            </li>
          </ul>
        </div>
-       <!-- Левое меню поиска -->
-       <div class="selection">
-         <form action="#" method="get">
-           <fieldset class="manufacturer">
-             <legend>Производители:</legend>
-             <input type="checkbox" name="baxter" id="manufacturer-baxter" checked>
-             <label for="manufacturer-baxter">BAXTER OF CALIFORNIA</label>
-             <input type="checkbox" name="mr-natty" id="manufacturer-mr-natty">
-             <label for="manufacturer-mr-natty">MR NATTY</label>
-             <input type="checkbox" name="suavecito" id="manufacturer-suavecito" checked>
-             <label for="manufacturer-suavecito">SUAVECITO</label>
-             <input type="checkbox" name="malin-goetz" id="manufacturer-malin-goetz" >
-             <label for="manufacturer-malin-goetz">MALIN+GOETZ</label>
-             <input type="checkbox" name="murray" id="manufacturer-murray" >
-             <label for="manufacturer-murray">MURRAY'S</label>
-             <input type="checkbox" name="american-crew" id="manufacturer-american-crew" checked>
-             <label for="manufacturer-american-crew">AMERICAN CREW</label>
-           </fieldset>
-           <fieldset class="choise-goods">
-              <legend>Группы товаров:</legend>
-              <input type="radio" name="goods" value="Shaving accessories" id="Shaving-accessories">
-              <label class="goods-item" for="Shaving-accessories">Бритвенные принадлежности</label>
-              <input type="radio" name="goods" value="Means for care" id="Means-for-care" checked>
-              <label class="goods-item" for="Means-for-care">Средства для ухода</label>
-              <input type="radio" name="goods" value="Accessories" id="Accessories">
-              <label class="goods-item" for="Accessories">Аксессуары</label>
-            </fieldset>
-            <button type="submit">Показать</button>
-        </form>
+       <div class="search-goods">
+         <!-- Левое меню поиска -->
+         <div class="selection">
+           <form action="#" method="get">
+             <fieldset class="manufacturer">
+               <legend>Производители:</legend>
+               <input type="checkbox" name="baxter" id="manufacturer-baxter" checked>
+               <label for="manufacturer-baxter">BAXTER OF CALIFORNIA</label>
+               <input type="checkbox" name="mr-natty" id="manufacturer-mr-natty">
+               <label for="manufacturer-mr-natty">MR NATTY</label>
+               <input type="checkbox" name="suavecito" id="manufacturer-suavecito" checked>
+               <label for="manufacturer-suavecito">SUAVECITO</label>
+               <input type="checkbox" name="malin-goetz" id="manufacturer-malin-goetz" >
+               <label for="manufacturer-malin-goetz">MALIN+GOETZ</label>
+               <input type="checkbox" name="murray" id="manufacturer-murray" >
+               <label for="manufacturer-murray">MURRAY'S</label>
+               <input type="checkbox" name="american-crew" id="manufacturer-american-crew" checked>
+               <label for="manufacturer-american-crew">AMERICAN CREW</label>
+             </fieldset>
+             <fieldset class="choise-goods">
+                <legend>Группы товаров:</legend>
+                <input type="radio" name="goods" value="Shaving accessories" id="Shaving-accessories">
+                <label class="goods-item" for="Shaving-accessories">Бритвенные принадлежности</label>
+                <input type="radio" name="goods" value="Means for care" id="Means-for-care" checked>
+                <label class="goods-item" for="Means-for-care">Средства для ухода</label>
+                <input type="radio" name="goods" value="Accessories" id="Accessories">
+                <label class="goods-item" for="Accessories">Аксессуары</label>
+              </fieldset>
+              <button type="submit">Показать</button>
+          </form>
+         </div>
+         <!-- Найденные товары -->
+         <section class="catalog">
+           <article class="catalog-item">
+             <figure>
+               <img src="img/catsetfortravel.jpg" alt="Набор для путешествий «BAXTER OF CALIFORNIA»" width="220" height="165">
+             </figure>
+             <h2 class="h-catalog-item">Набор для путешествий <span>«BAXTER OF CALIFORNIA»</span></h2>
+             <span class="price">2 900 р.</span>
+             <a class="btn" href="#">Купить</a>
+           </article>
+           <article class="catalog-item">
+             <figure>
+               <img src="img/catcondition.jpg" alt="Увлажняющий кондиционер «BAXTER OF CALIFORNIA»" width="220" height="165">
+             </figure>
+             <h2 class="h-catalog-item">Увлажняющий кондиционер <span>«BAXTER OF CALIFORNIA»</span></h2>
+             <span class="price">750 р.</span>
+             <a class="btn" href="#">Купить</a>
+           </article>
+           <article class="catalog-item">
+             <figure>
+               <img src="img/catgelhairsuaveciko.jpg" alt="Гель для волос «SUAVECITO»" width="220" height="165">
+             </figure>
+             <h2 class="h-catalog-item">Гель для волос <span>«SUAVECITO»</span></h2>
+             <span class="price">290 р.</span>
+             <a class="btn" href="#">Купить</a>
+           </article>
+           <article class="catalog-item">
+             <figure>
+               <img src="img/catclayhair.jpg" alt="Глина для укладки волос «AMERICAN CREW»" width="220" height="165">
+             </figure>
+             <h2 class="h-catalog-item">Глина для укладки волос <span>«AMERICAN CREW»</span></h2>
+             <span class="price">500 р.</span>
+             <a class="btn" href="#">Купить</a>
+           </article>
+           <article class="catalog-item">
+             <figure>
+               <img src="img/catgelhairamericano.jpg" alt="Гель для волос «AMERICAN CREW»" width="220" height="165">
+             </figure>
+             <h2 class="h-catalog-item">Гель для волос <span>«AMERICAN CREW»</span></h2>
+             <span class="price">300 р.</span>
+             <a class="btn" href="#">Купить</a>
+           </article>
+           <article class="catalog-item">
+             <figure>
+               <img src="img/catshavingkit.jpg" alt="Набор для бритья «BAXTER OF CALIFORNIA»" width="220" height="165">
+             </figure>
+             <h2 class="h-catalog-item">Набор для бритья <span>«BAXTER OF CALIFORNIA»</span></h2>
+             <span class="price">3 900 р.</span>
+             <a class="btn" href="#">Купить</a>
+           </article>
+         </section>
        </div>
-       <!-- Найденные товары -->
-       <section class="catalog">
-         <article class="catalog-item">
-           <figure>
-             <img src="img/catsetfortravel.jpg" alt="Набор для путешествий «BAXTER OF CALIFORNIA»" width="220" height="165">
-           </figure>
-           <h2 class="h-catalog-item">Набор для путешествий «BAXTER OF CALIFORNIA»</h2>
-           <span class="price">2 900 р.</span>
-           <a class="btn" href="#">Купить</a>
-         </article>
-         <article class="catalog-item">
-           <figure>
-             <img src="img/catcondition.jpg" alt="Увлажняющий кондиционер «BAXTER OF CALIFORNIA»" width="220" height="165">
-           </figure>
-           <h2 class="h-catalog-item">Увлажняющий кондиционер «BAXTER OF CALIFORNIA»</h2>
-           <span class="price">750 р.</span>
-           <a class="btn" href="#">Купить</a>
-         </article>
-         <article class="catalog-item">
-           <figure>
-             <img src="img/catgelhairsuaveciko.jpg" alt="Гель для волос «SUAVECITO»" width="220" height="165">
-           </figure>
-           <h2 class="h-catalog-item">Гель для волос «SUAVECITO»</h2>
-           <span class="price">290 р.</span>
-           <a class="btn" href="#">Купить</a>
-         </article>
-         <article class="catalog-item">
-           <figure>
-             <img src="img/catclayhair.jpg" alt="Глина для укладки волос «AMERICAN CREW»" width="220" height="165">
-           </figure>
-           <h2 class="h-catalog-item">Глина для укладки волос «AMERICAN CREW»</h2>
-           <span class="price">500 р.</span>
-           <a class="btn" href="#">Купить</a>
-         </article>
-         <article class="catalog-item">
-           <figure>
-             <img src="img/catgelhairamericano.jpg" alt="Гель для волос «AMERICAN CREW»" width="220" height="165">
-           </figure>
-           <h2 class="h-catalog-item">Гель для волос «AMERICAN CREW»</h2>
-           <span class="price">300 р.</span>
-           <a class="btn" href="#">Купить</a>
-         </article>
-         <article class="catalog-item">
-           <figure>
-             <img src="img/catshavingkit.jpg" alt="Набор для бритья «BAXTER OF CALIFORNIA»" width="220" height="165">
-           </figure>
-           <h2 class="h-catalog-item">Набор для бритья «BAXTER OF CALIFORNIA»</h2>
-           <span class="price">3 900 р.</span>
-           <a class="btn" href="#">Купить</a>
-         </article>
-       </section>
        <!-- Навигация по страницам -->
        <div class="pagination">
          <ul>
